@@ -26,7 +26,7 @@ function Navbar() {
           <nav
             className={`${
               isOpen ? "block" : "hidden"
-            }absolute top-full left-0 w-full bg-black md:static md:w-auto md:bg-transparent md:block`}
+            } absolute top-full left-0 w-full bg-black md:static md:w-auto md:bg-transparent md:block`}
           >
             <ul className="flex flex-col items-center gap-4 md:flex-row md:gap-10 md:py-0">
               <li className="relative cursor-pointer after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[#00c9a7] after:transition-all after:duration-300 hover:after:w-full">
