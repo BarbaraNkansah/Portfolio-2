@@ -21,39 +21,7 @@ function Navbar() {
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          <AnimatePresence>
-            {isOpen &&(
-              <motion.nav
-              initial={{opacity:0, y: -20}}
-              animate={{opacity: 1, y: 0}}
-              exist={{opacity:0, y: -20}}
-              transition={{duration: 0.3}}
-              className= "absolute top-14 left-0 w-full bg-black md:hidden"
-             >
-            
-             <ul className="flex flex-col items-center gap-4 md:flex-row md:gap-10 md:py-0">
-              <li className="relative cursor-pointer after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[#00c9a7] after:transition-all after:duration-300 hover:after:w-full">
-                
-                <Link to="/project">Projects</Link>
-              </li>
-              <li className="relative cursor-pointer after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[#00c9a7] after:transition-all after:duration-300 hover:after:w-full">
-                
-                    <Link to="/about">About Me</Link>
-              </li>
-          
-              <li className="relative cursor-pointer after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[#00c9a7] after:transition-all after:duration-300 hover:after:w-full">
-                   <Link to="/contact">Contact</Link>
-              </li>
-              <a
-                href="/Barbara_Nkansah_Resume.pdf" target="_blank" rel="noopener noreferrer"
-                 className="relative cursor-pointer after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[#00c9a7] after:transition-all after:duration-300 hover:after:w-full"
-              >
-                CV
-              </a>
-            </ul>
-            </motion.nav>
-            )}
-          </AnimatePresence>
+  
             
           <nav
             className={`${
