@@ -10,7 +10,7 @@ function Navbar() {
   return (
     
       <header className="fixed top-0 left-0 w-full z-50 bg-black px-4 py-2">
-        <div className="flex justify-between items-center text-lg font-serif text-white rounded-full md:shadow-lg max-w-7xl mx-auto px-6 py-6 md:px-12">
+        <div className="flex justify-between items-center text-lg font-serif text-white rounded-full md:shadow-lg mx-auto px-6 py-6 md:px-12 max-w-screen-2xl">
 
           <h1 className="text-base sm:text-lg md:text-xl font-bold">
            <Link to="/"> BARBARA <span className="text-[#00c9a7]">NKANSAH</span></Link>
